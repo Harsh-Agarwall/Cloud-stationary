@@ -1,11 +1,40 @@
-.container-fluid {
-    background-color:rgba(7, 154, 144, 0.5) ;
+body {
+    background-color:#34353b;
+    color:#fec86a;
+
 }
-body 
-{
-    background-color: rgba(0, 0, 0, 0.95) !important;
-}
-.devansh {
-    font-size: smaller;
+.head {
     text-align: center;
+    margin-top: 30vh;
+}
+.container-fluid a {
+    color: #fbfbfb !important;
+}
+
+button {
+    background-color: transparent;
+    height:60px;
+    width:130px;
+    border-radius: 0.5rem;
+    border:2px solid #fec86a;
+    color: #fec86a;
+    transition: all ease 0.5s;
+    
+    
+    
+ }
+ button:hover {
+    background-color: #fec86a;
+    color: #34353b;
+  }
+  .left {
+    margin-left: 450px;
+    margin-top: 50px;
+  }
+.footer {
+    background-color: #fec86a;
+    height: 300px;
+}
+.content {
+    height: 100vh;
 }
