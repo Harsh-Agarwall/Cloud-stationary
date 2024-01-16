@@ -31,13 +31,13 @@ body{
 
 }
 .container h2{
-    margin-bottom: 3rem;
+    margin-bottom: .5rem;
     font-size: 4rem;
     font-weight: 600;
     text-align: center;
 }
 .container .input_bx{
-    margin-bottom: 4rem;
+    margin-bottom: 3.2rem;
     display: flex;
     align-items: center;
     position: relative;
