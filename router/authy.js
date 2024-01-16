@@ -4,7 +4,7 @@ const User = require("../model/userschema");
 
 
       router.get("/", (req, res) => {
-        res.render("index");
+        res.render("index.ejs");
       });
 
 
@@ -74,6 +74,9 @@ const User = require("../model/userschema");
         }
 });
 
+router.get("/shubham",(req,res)=>{
+        res.send("working");
+})
 
 
 module.exports=router;
