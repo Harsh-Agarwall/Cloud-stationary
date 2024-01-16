@@ -1,0 +1,29 @@
+<%layout("/layouts/Boilerplate.ejs")%>
+<body>
+    <div class="container">
+        <h2>login</h2>
+        <form action="/login" method="POST">
+            <div class="input_bx">
+                <input type="text" name="email" id="email" value="" required>
+                <span></span>
+                <label for="">Email</label>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input_bx">
+                <input type="password"  name="password" id="password" value="" required>
+                <span></span>
+                <label for="">Password</label>
+                <i class="fa-solid fa-lock"></i>
+            </div> 
+            <div class="cache-bx">
+                <div class="remember-bx">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#">forgot password</a>
+            </div>
+            <button>Login</button>
+            <p>Don't have an account? <a href="/register">Register</a></p>
+        </form>
+    </div>
+</body>
