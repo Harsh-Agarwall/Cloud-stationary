@@ -4,7 +4,7 @@ const User = require("../model/userschema");
 
 
       router.get("/", (req, res) => {
-        res.render("index1.ejs");
+        res.render("index.ejs");
       });
 
 

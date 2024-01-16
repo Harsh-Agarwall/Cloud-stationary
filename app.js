@@ -19,6 +19,3 @@ app.use(require('./router/authy'));
 app.listen(port, (req, res) => {
     console.log(`listening the port at port ${port}`);
   });
-app.get("/",(req,res)=>{
-  res.render("index.ejs");
-})
