@@ -26,7 +26,6 @@ app.set("views",templatespath);
 
 hbs.registerPartials(partialspath);
 
-
 app.use(express.json());
 
 
