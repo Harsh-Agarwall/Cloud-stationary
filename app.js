@@ -1,39 +1,22 @@
-const mongoose =require("mongoose");
 const express = require("express");
 const app = express();
-const hbs=require("hbs");
+const mongoose = require("mongoose");
+const port = 8000;
 const path = require("path");
-require('./db/conn');
-const User=require('./model/userschema');
-const port=8000;
-
-
-const staticpath = path.join(__dirname, "./public");
-
-
-const templatespath = path.join(__dirname, "./templates/views");
-const partialspath = path.join(__dirname, "./templates/partials");
-
-
-app.use(express.static(staticpath));
-
-
-app.set("view engine", "hbs");
-
-
-app.set("views",templatespath);
-
-
-hbs.registerPartials(partialspath);
-
-app.use(express.json());
-
-
+const ejsMate = require("ejs-mate");
+app.engine("ejs",ejsMate);
+app.set("view engine","ejs");
+app.set("views",path.join(__dirname,"views"));
+app.use(express.static(path.join(__dirname,"public")));
 app.use(express.urlencoded({extended:false}));
 
+const User=require('./model/userschema');
 
+
+app.use(express.json());
 app.use(require('./router/authy'));
 
 app.listen(port, (req, res) => {
     console.log(`listening the port at port ${port}`);
   });
+ 
