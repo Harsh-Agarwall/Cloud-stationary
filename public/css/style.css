@@ -4,17 +4,17 @@
 }
 .cover {
     background-color: #6600FF;
-    height: 400px;
+    height: 25rem;
     width: 100%;
     z-index: 2;
     opacity: 0.9;
     position: absolute;
-    border-radius: 0 10px 10px 10px;
+    border-radius: 0 0.625rem 0.625rem 0.625rem;
 
 }
 h3 {
     color: #fbfbfb;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
   }
   span {

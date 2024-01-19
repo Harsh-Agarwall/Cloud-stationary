@@ -14,27 +14,33 @@
     <%- include("./includes/navbar.ejs") %>
     <%- include("./includes/flash.ejs") %>
     <div class="main">
+        
      <div class="left">
     <div class="login">
-      <h2>Login</h2>
-      <form  action="/login" class="needs-validation" novalidate method="post">
+      <h2>Sign Up</h2>
+      <form  action="/signup" class="needs-validation" novalidate method="post">
         <div class="form">
-          <label for="username"  class="form-lable lable">Username:</label>
-          <input class="form-control" type="text" id="username" name="username" placeholder="Enter your Username" required>
+          <label for="email"  class="form-lable lable">email:</label>
+          <input class="form-control" type="text" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form">
+          <label for="Username"  class="form-lable lable">Username:</label>
+          <input class="form-control" type="text" id="Username" name="username" placeholder="Enter your Username" required>
         </div>
         <div class="form">
           <label for="password" class="form-lable lable">Password:</label>
           <input class="form-control" type="password" id="password" name="password" placeholder="Enter your password" required>
         </div>
         <div class="form form-lable">
-          <button type="submit" class="btn btn-dark label">Login</button>
+          <button type="submit" class="btn btn-dark label">Sign Up</button>
         </div>
       </form>
     </div>
     </div>
     <div class="right">
-     <img src="/images/logo.png" alt="img">
-    </div>
+        <img src="/images/logo.png" alt="img">
+     </div>
+ 
 </div>
 <%- include("./includes/footer.ejs") %>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
