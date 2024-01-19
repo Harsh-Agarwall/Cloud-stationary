@@ -8,22 +8,29 @@
 </head>
 <body>
     <div class="main1">
-        <form action="/product" method="post">
+        <form action="/product" method="post" enctype="multipart/form-data">
             <div class="name">
             <label for="name">product's name</label>
-            <input type="text" name="pname" id="name" >
+            <input type="text" name="product[title]" id="name" >
         </div>
         <div class="description">
             <label for="description">description </label>
-            <input type="text" name="description" id="description" >
+            <input type="text" name="product[description]" id="description" >
         </div>
         <div class="img">
             <label for="image">image </label>
-            <input type="file" name="photo" id="image" >
+            <input type="file" name="product[image]" id="image" >
         </div>
         <div class="submit">
             <button type="submit">post</button>
         </div>
+        
+       <% if(newProduct)  { %>
+        <img src="<%=n%>"
+        <% } %>
+
+
+        
         
 
         </form>
