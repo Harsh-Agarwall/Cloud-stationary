@@ -12,6 +12,15 @@ const User = require("../model/userschema");
       router.get("/register", (req, res) => {
         res.render("register.ejs");
       });
+      router.get("/product", (req, res) => {
+        res.render("product.ejs");
+      });
+      router.post('/product',(req,res)=>{
+        const {pname,description,photo}=req.body;
+        if(!pname || !description || !photo){
+                return res.json({error:"nopes"});
+        }
+      })
 
 
 
