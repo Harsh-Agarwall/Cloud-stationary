@@ -20,7 +20,7 @@ const upload = multer({storage});
         res.render("register.ejs");
       });
       router.get("/product", (req, res) => {
-        res.render("product.ejs");
+        res.render("product.ejs",{n:null});
       });
     //  uploade product
     router.post("/product",upload.single("product[image]"),async (req,res,next)=>{
